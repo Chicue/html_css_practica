@@ -1,2 +1,2 @@
 # html_css_practica
-practica de css y html
+compilacion de clases de html y css tomadas como sepaso
