@@ -1,0 +1,42 @@
+.main-nav{
+    margin-top: 10px;
+    /*para quitar los puntos de una lista*/
+    list-style: none;
+    /*es una dimension interna, un espacio interno en un contenedor*/
+    padding-left: 0;
+    /*color de fondo*/
+    background-color: aquamarine; 
+}
+.main-nav__item{
+    /*para mostrar de forma horizontal*/
+    display: inline-block;
+}
+/* "ser especifico en css" estoy modificando todos los "a" que se encuentren dentro de las etiquetas
+con una clase main-nav__item */
+.main-nav__item a {
+    color: aliceblue;
+    padding: 5px;
+    /*redondean las esquinas*/
+    border-radius: 2px;
+    /*quita la linea inferior del hipervinculo*/
+    text-decoration: none;
+}
+/****pseudo clases****/
+    /*para llamar las pseudo clases se utiliza  el ":"*/
+    /*hover cuando el puntero se encuentra encima del elemento se ejecuta este estilo*/
+    .main-nav__item a:hover {
+        color: blue;
+    }
+    /*active cuando se le da click al elemento se activa este estilo*/
+    .main-nav__item a:active {
+        color: red;
+    }
+/**********************/
+
+/****pseudo elemento****/
+    /*para llamar las pseudo elementos se utiliza  el "::"*/
+    /*after despues de el elemento agregale este contenido*/
+    .main-nav__item a::after {
+        content: " | ";
+    }
+/***********************/

@@ -1,0 +1,16 @@
+/*selectro universal * sirve para modificar los estilos que vinen por defecto en el navegador*/
+/*RECOMENDACION: siempre reseatear el elemento universal del navegador*/
+* {
+    /*box-sizing: border-box; sirve para sumar el padding con el width del elemento y asi arreglar problemas
+    con el scroll al crear una dimension justa ... solo recalcula el padding y el border, el margin no*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid gray;
+    padding: 20px 35px;
+}
