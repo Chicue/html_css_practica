@@ -37,7 +37,7 @@ h1 {
     text-decoration: none;
 }
 
-/*este cambio no se esta aplicando porque tiene prioridad el estilo enbebido aplicado al html sobre la etiqueta*/
+/* (1) este cambio no se esta aplicando porque tiene prioridad el estilo enbebido aplicado al html sobre la etiqueta*/
 #main-nav .blog {
     background-color: blue;
 }

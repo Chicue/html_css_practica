@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinadores</title>
+    <link rel="stylesheet" href="./combinadores.css">
+</head>
+<body>
+    <main>
+        <!--hermano simple (adjacent sibling)-->
+        <section>
+            <h3>hermano simple (adjacent sibling)</h3>
+            <h2>un h2</h2>
+            <p>etiqueta de parrafo</p>
+            <h2>otro h2</h2>
+            <h3>otro h3</h3>
+            <p>parrafo</p>
+            <h2>h2</h2>
+            <p>parrafopasdasd</p>
+        </section>
+        <!--hermano general (general sibling) h2 s hermano general porque se encuentra dentro del mismo div-->
+        <section>
+            <div>
+                <h3>hermano general (general sibling) h2 s hermano general porque se encuentra dentro del mismo div</h3>
+                <h2>h2</h2>
+                <p>un p</p>
+                <h2>soy un h2</h2>
+                <h3>un h3</h3>
+                <p>parrafo</p>
+            </div>
+        </section>
+        <!--hijos, todos los p son hijos directos de div, (estan contenidos directamente en div)-->
+        <div>
+            <h3>hijos</h3>
+            <article>
+                <p>texto</p>
+            </article>
+            <article>
+                <p>texto</p>
+            </article>
+            <section>
+                <div>
+                    <p>soy un texto</p>
+                </div>
+            </section>
+            <p>otro texto</p>
+        </div>
+        <!--descendiente todos los p son hijos de div directa o indirectamente-->
+        <div>
+            <h3>Descendiente</h3>
+            <p>teeeeeeeeeeeexto</p>
+            <h2>h2</h2>
+            <article>
+               <p>un p</p> 
+            </article>
+            <h2>soy un h2</h2>
+            <h3>un h3</h3>
+            <article>
+              <p>parrafo</p>  
+            </article>
+        </div>
+
+
+
+    </main>
+</body>
+</html>

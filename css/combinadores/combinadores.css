@@ -1,0 +1,24 @@
+/* (+ hermano adyacente o cercano) */
+/*colocar en rojo a las etiquetas p que esten cerca a un h2*/
+/*h2 + p {
+    color: red;
+}*/
+
+/* (~ hermano general)*/
+/*modifica todas las etiqutas p que tengan como hermano general un h2 
+(osea que se encuentran dentro del mismo contenedor)*/
+/*h2 ~ p {
+    color: blue;
+}*/
+
+/* (> hijo) */
+/*modifica los p que sean hijos directos de div (estan contenidos directamente en un div)*/
+/*div > p {
+    color: cornflowerblue;
+}*/
+
+/*descendiente*/
+/*pinta de verde todos los p que esten detro de un div sean hijos directos o no (es mas general)*/
+div p {
+    color: green;
+}
