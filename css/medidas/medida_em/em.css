@@ -1,0 +1,14 @@
+body {
+    font-size: 20px;
+}
+
+/*em toma la medida del padre directo, en este caso el padre directo del main es body que 
+tiene una medida de 20px por lo tanto 1em=20px y 1.5em es igual a 20px*1.5=30px*/
+.text-container{
+    font-size: 1em;
+}
+/*hay que tener cuidado de en donde se llamen las meddas porque se podria generar un bucle donde se 
+sume y se sumen medidas*/
+.text-container div{
+    font-size: 1.5em;
+}
