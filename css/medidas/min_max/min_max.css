@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+
+/*main ocupa el 100% del viewport*/
+main{
+    font-size: 1.6rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+} 
+
+section {
+    width: 80%;
+    /*por regla para poner un min-width y un max-width tiene que haber un width base*/
+    min-width: 320px;
+    max-width: 500px;
+    /*height: 500px puede generar un overflow para solucionarlo se puede remplazar por un min-height: 500px;
+    lo que permite que el contenedor se expanda*/
+    height: 500px;
+    /*min-height: 500px;*/
+    /*arriba y abajo no le agregue margin pero a los costados si*/
+    margin: 0 auto;
+    background-color: chartreuse;
+}
