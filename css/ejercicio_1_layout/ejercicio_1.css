@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+nav{
+    background-color: blue;
+    min-height: 7.0rem;
+}
+
+/*logo*/
+.part_izq{
+    display: inline-block;
+    /*background-color: aqua;*/
+    width: 20%;
+    min-height: 7.0rem;
+}
+
+/**/
+
+/*parte derecha*/
+.part_der{
+    display: inline-block;
+    /*background-color: brown;*/
+    width: 79%;
+    min-height: 7.0rem;
+    text-align: right;
+}
+
+.part_der li{
+    margin-top: 4.0rem;
+    margin-right: 1.0rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.0rem 2rem;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 126);
+}
+
+.part_der li:hover{
+    background-color: rgb(149, 72, 221);
+    cursor: pointer;
+}
+
+.part_der li:active{
+    color: cadetblue;
+}
+/****************/
+
+.menu_izq{
+    display: inline-block;
+    /*background-color: green;*/
+    width: 20%;
+    min-height: 100%;
+}
+
+.menu_der{
+    display: inline-block;
+    background-color: pink;
+    width: 79%;
+    min-height: 100%;
+}
+
+.menu_izq div{
+    background-color: dodgerblue;
+    width: 80%;
+    min-height: 10.0rem;
+    margin: 3.0rem;
+    border-radius: 12px;
+}
+
+.menu_izq div p{
+    font-size: 30px;
+    text-align: center;
+}
+
+footer{
+    background-color: cadetblue;
+    width: 100%;
+    min-height: 100px;
+}

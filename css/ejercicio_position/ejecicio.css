@@ -39,9 +39,9 @@ section{
     border-radius: 12px;
 }
 
-.card div{
+/*.card div{
     display: inline-block;
-}
+}*/
 
 .card__title{
     background-color: bisque;
