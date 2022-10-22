@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labels alt title</title>
-    <link rel="stylesheet" href="./labels.css">
+    <title>Labels , Alt ,Title</title>
+    <link rel="stylesheet" href="./ejemplo_label_alt_title.css">
 </head>
 <body>
     <main>
         <section>
             <form action="">
+                <!--los atributos for de los label deben de llamarse igual al id del input que contienen esto
+                con razon de mejorar la accesibilidad-->
                 <label for="name">
-                    <span>cual es tu nombre</span>
+                    <span>¿Cual es tu nombre?</span>
                     <input id="name" type="text">
                 </label>
                 <label for="apellido">
-                    <span>cuando iniciaste a studiar en platzi?</span>
+                    <span>¿Cuando iniciaste a studiar en platzi?</span>
                     <input id="apellido" type="date">
                 </label>
                 <label for="fumas">
-                    <span>fumas?</span>
+                    <span>¿Fumas?</span>
                     <input id="fumas" type="text">
                 </label>
             </form>
         </section>
 
         <section>
+            <!--en caso de que la imagen no se llegase a cargar por alguna razon el atributo alt se mostraria
+            en vez de la imagen para que se describa que era esa imagen que no se cargo, el title muestra un texto
+            describiendo la imagen si se deja un tiempó el puntero sobre la imagen-->
             <img src="https://i.ytimg.com/vi/oVQG6D03tps/maxresdefault.jpg" alt="garou vs saitama" title="garou">
         </section>
     </main>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importancia, Especificidad y orden de selectores</title>
+    <link rel="stylesheet" href="./especificidad_orden_de_selectores.css">
+</head>
+<body>
+    <main>
+        <header class="page-header">
+            <h1 id="page-title" class="title">titulo de la empresa</h1>
+            <nav>
+                <ul id="main-nav" class="nav">
+                    <li><a href="">primera opcion</a></li>
+                    <li><a href="">segunda opcion</a></li>
+                    <li><a href="">tercera opcion</a></li>
+                    <li><a href="">cuarta opcion</a></li>
+                    <!-- (1) problema de estilos embebidos-->
+                    <li><a href="" class="blog" style="background-color: red">quinta opcion</a></li>
+                </ul>
+            </nav>
+        </header>
+    </main>
+
+        <center>
+            <p>
+                ¿Como se controla el orden al declarar el css?<br> <br> <br>
+            </p>
+                <ul>
+                    <li>
+                        1. IMPORTANCIA
+                    </li>
+                    <li>
+                        2. ESPECIFCIDAD
+                    </li>
+                    <li>
+                        3. ORDEN DE LAS FUENTES
+                    </li>
+                </ul>
+        </center>
+        <h3>Importancia:</h3>
+        <ul>
+            <li>1. Declaraciones importantes en hojas de estilo del autor (utilizar el !important)</li>
+            <li>2. Declaracions normales en hojas de estilo del autor (nuestro css)</li>
+            <li>3. Hoja d estilo de agente de usuario (estilos del navegador)</li>
+            <li>NOTA: no deberia de utilizarse el !important , no es una buena practica</li>
+        </ul><br><br><br>
+        <h3>Especificidad:</h3>
+        <div>
+           <table>
+                <tr>
+                    <th>Selectores</th>
+                    <th>Especificidad</th>
+                </tr>
+                <tr>
+                    <td>!important</td>
+                    <td>1.0.0.0.0</td>
+                </tr>
+                <tr>
+                    <td>Inline stayles</td>
+                    <td>0.1.0.0.0</td>
+                </tr>
+                <tr>
+                    <td>#id</td>
+                    <td>0.0.1.0.0</td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>0.0.0.1.0</td>
+                </tr>
+                <tr>
+                    <td>tag</td>
+                    <td>0.0.0.0.1</td>
+                </tr>
+           </table>
+        </div><br><br><br>
+        <h3>Orden de las fuentes:</h3>
+        <p>En los estilos las declaraciones que se encuentran al final del documento anularan a las que que sucedan
+            antes en caso de conflicto.
+        </p>
+
+    
+
+</body>
+</html>

@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>combinadores</title>
-    <link rel="stylesheet" href="./combinadores.css">
+    <title>Combinadores</title>
+    <link rel="stylesheet" href="./ejemplo_combinadores.css">
 </head>
 <body>
     <main>
-        <!--hermano simple (adjacent sibling)-->
+
+        <p>
+            (+ hermano adyacente o cercano) <br>
+            /*colocar en rojo a las etiquetas p que esten cerca a un h2*/<br>
+            h2 + p {<br>
+                color: red;<br>
+            }<br>
+            <br>
+            (~ hermano general)<br>
+            /*modifica todas las etiqutas p que tengan como hermano general un h2 <br>
+            (osea que se encuentran dentro del mismo contenedor)*/<br>
+            h2 ~ p {<br>
+                color: blue;<br>
+            }<br>
+            <br>
+            (> hijo)<br>
+            modifica los p que sean hijos directos de div (estan contenidos directamente en un div)<br>
+            div > p {<br>
+                color: cornflowerblue;<br>
+            }<br>
+            <br>
+            descendiente<br>
+            /*pinta de verde todos los p que esten detro de un div sean hijos directos o no (es mas general)*/<br>
+            div p {<br>
+                color: green;<br>
+            }<br>
+            <br>
+        </p>
+
+        <!--hermano adyacente o cercano (adjacent sibling)-->
         <section>
             <h3>hermano simple (adjacent sibling)</h3>
             <h2>un h2</h2>
@@ -20,7 +49,7 @@
             <h2>h2</h2>
             <p>parrafopasdasd</p>
         </section>
-        <!--hermano general (general sibling) h2 s hermano general porque se encuentra dentro del mismo div-->
+        <!--hermano general (general sibling) h2 es hermano general porque se encuentra dentro del mismo div-->
         <section>
             <div>
                 <h3>hermano general (general sibling) h2 s hermano general porque se encuentra dentro del mismo div</h3>
@@ -31,7 +60,7 @@
                 <p>parrafo</p>
             </div>
         </section>
-        <!--hijos, todos los p son hijos directos de div, (estan contenidos directamente en div)-->
+        <!--hijos, todos los p que son hijos directos de un div, (estan contenidos directamente en div)-->
         <div>
             <h3>hijos</h3>
             <article>

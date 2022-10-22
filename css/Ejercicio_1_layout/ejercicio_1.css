@@ -1,11 +1,14 @@
+/*esto siempre deberia de ir para todo desarrollo*/
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+/*se coloca 62.5, para poder manejar la medida rem con mayor facilidad, (como si  fueran pixeles)*/
 html{
     font-size: 62.5%;
 }
+/* 1.6rem = 16px */
 body{
     font-size: 1.6rem;
 }
@@ -22,7 +25,6 @@ nav{
     width: 20%;
     min-height: 7.0rem;
 }
-
 /**/
 
 /*parte derecha*/
@@ -46,11 +48,12 @@ nav{
     box-shadow: 5px 5px 5px rgb(0, 0, 126);
 }
 
+/*mouse encima del elemento*/
 .part_der li:hover{
     background-color: rgb(149, 72, 221);
     cursor: pointer;
 }
-
+/*mouse da click sobre el elemento*/
 .part_der li:active{
     color: cadetblue;
 }

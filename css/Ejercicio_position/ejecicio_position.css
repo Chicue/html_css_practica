@@ -1,22 +1,29 @@
+/*esto siempre deberia de ir para todo desarrollo*/
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+/*se coloca 62.5, para poder manejar la medida rem con mayor facilidad, (como si  fueran pixeles)*/
 html{
     font-size: 62.5%;
 }
+/* 1.6rem = 16px */
 body{
-    font-size: 1.6rem;/*16px por defecto en rem*/  
+    font-size: 1.6rem;
 }
 
 main{
     background-image: url("./fondo.jpg"); 
+    /*para dejar imagen fija en el fondo de la pagina*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    /************************************************/
+    /*tamaño completo de la pantalla*/
     width: 100vw;
     height: 100vh;
+    /*******************************/
 }
 
 section{
@@ -24,6 +31,7 @@ section{
     width: 80%;
     min-width: 50rem;
     height: 100%;
+    /*centrar en vetical*/
     margin: 0 auto;
 }
 
@@ -43,6 +51,8 @@ section{
     display: inline-block;
 }*/
 
+/*la posicion absoluta de este titulo estara relacionada a la de su contenedor osea que se esta indicando
+40% apartir del inicio del la etiqueta con la clase card (etiqueta contenedora)*/
 .card__title{
     background-color: bisque;
     border-radius: 20px;

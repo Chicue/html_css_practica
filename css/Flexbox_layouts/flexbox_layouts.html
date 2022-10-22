@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./flexbox_layouts.css">
+</head>
+<body>
+    <main class="container">
+        <div class="box1 box">
+            <p>box 1</p>
+        </div>
+        <div class="box2 box">
+            <p>box 2</p>
+        </div>
+        <div class="box3 box">
+            <p>box 3</p>
+        </div>
+        <div class="box4 box">
+            <p>box 4</p>
+        </div>
+        <div class="box5 box">
+            <p>box 5</p>
+        </div>
+        <div class="box6 box">
+            <p>box 6</p>
+        </div>
+    </main>
+    
+    <p>
+        border: 0.3rem solid black;<br>
+        display: flex;<br>
+        <br>
+        /*alineacion centrado*/<br>
+        align-items: center;<br>
+        <br>
+        /*alineacion al final*/<br>
+        align-items: flex-end;<br>
+        <br>
+        /*alineacion al incio*/<br>
+        align-items: flex-start;<br>
+        <br>
+        /*los tamaños de los contenidos no deben estar definidos*/<br>
+        /*se estiran siempre al 100% de su contenedor padre*/<br>
+        align-items: stretch;<br>
+        <br>
+        /*va a tomar el espacio de su contenido*/<br>
+        align-items: baseline;<br>
+        <br>
+        flex-wrap: wrap;<br>
+        <br>
+        <br>
+        <br>
+        /*responsivo*/<br>
+        /*apartir de que tamaño se van a reacomodar las secciones una debajo de otra*/<br>
+        flex-basis: 10rem;<br>
+        /*ocupar el espacio vacio restante, se puede editar por cada elemento para <br>
+        que cada uno ocupe una cantidad distina*/<br>
+        flex-grow: 1;<br>
+        <br>
+    </p>
+
+</body>
+</html>

@@ -1,11 +1,14 @@
+/*esto siempre deberia de ir para todo desarrollo*/
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+/*se coloca 62.5, para poder manejar la medida rem con mayor facilidad, (como si  fueran pixeles)*/
 html{
     font-size: 62.5%;
 }
+/* 1.6rem = 16px */
 body{
     font-size: 1.6rem;
 }
@@ -16,6 +19,7 @@ body{
     border: 0.3rem solid black;
     /*por defecto aparece en modo row el display flex pero se puede editar*/
     display: flex;
+
     /*en forma de columna*/
     /*flex-direction: column;*/
 
@@ -26,11 +30,14 @@ body{
     /*flex-direction: column-reverse;*/
 
     /*ajusta la posicion de los elementos de manera automatica dependiendo del tamaño de la pantalla*/
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+      
     /*constenido centrado*/
     /*justify-content: center;*/
+
     /*espacios entre elementos*/
     /*justify-content: space-around;*/
+    
     /*espacios entre elementos equivalente*/
     justify-content: space-evenly;
 

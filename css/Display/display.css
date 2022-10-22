@@ -1,0 +1,29 @@
+.block-element{
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+}
+
+.nav{
+    background-color: aqua;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*display: block; utiliza el 100% espacio que tenga disponible sin importar que el contenido tenga un espacio
+display block ocupa todo el espacio del width
+
+display; inline; va a utilizar el espacio que tenga su contenido y si queda espacio adelante va 
+a permitir que otras etiquetas se pongan adelante de este, NO SE PUEDE UTILIZAR MARGIN O PADDING EN LA PARTE DE 
+ARRIBA O ABAJO, TAMPOCO SE LE PUEDE DAR UN WIDTH O UN HEIGHT
+
+display; inline-block; ocupa el tamaño del contenido y permite configurar margin y pandding*/
