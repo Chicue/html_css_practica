@@ -1,4 +1,4 @@
-/*selectro universal * sirve para modificar los estilos que vinen por defecto en el navegador*/
+/*selector universal * sirve para modificar los estilos que vinen por defecto en el navegador*/
 /*RECOMENDACION: siempre reseatear el elemento universal del navegador*/
 * {
     /*box-sizing: border-box; sirve para sumar el padding con el width del elemento y asi arreglar problemas
