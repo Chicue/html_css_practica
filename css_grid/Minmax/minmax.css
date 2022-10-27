@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    border: 5px solid rgb(0, 89, 255);
+    background-color: blueviolet;
+    display: grid;
+    
+    /*minmax: ayuda a declarar el tamaño minimo y maximo para el ancho y alto de una celda,
+     sin depender del contenido que tengamos en ella*/
+    grid-template-columns: minmax(100px,500px) 200px minmax(100px,500px);
+
+    /*grid-template-rows: 200px 200px 200px;*/
+    grid-template-rows: repeat(3, auto/*para que se ajuste automaticamente al contenido las filas*/);
+    /*repeat : se usa cuando todas las columnas o filas tienen el msmo ancho y evitar repetir el
+     tamaño de las columnas*/
+}
+
+.item{
+    border: 5px solid rgb(0, 89, 255);
+    font-size: 2rem;
+}

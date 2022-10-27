@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    background-color: whitesmoke ;
+    border: 5px solid fuchsia;
+
+    /*para convertir en una grilla*/
+    display: grid;
+
+    /*cantidad de columnas y respectivo tamaño*/
+    grid-template-columns: 100px 200px 300px;
+
+    /*cantidad de filas y respectivo tamaño*/
+    /*grid-template-rows: 150px 250px;*/
+
+    /*tamaño automatico para cualquier fila que se cree*/
+    grid-auto-rows: 150px;
+
+    /*tamaño automatico para cualquier columna que se cree*/
+    /*grid-auto-columns: 150px;*/
+
+    /*sirve para determinar en que orden se van a llenar las filas, por defecto es row*/
+    /*grid-auto-flow: column;*/
+
+    /*para definior espacios entre las celdas (tapaño de las lineas)
+    solo en las lineas entre los espacios internos, no en los bordes*/
+    /*row-gap: 15px;*/
+    /*column-gap: 20px;*/
+    gap: 40px;
+    height: 600px;
+
+    /*alineacion de grilla en horizontal*/
+    justify-content: center;
+
+    /*alineacion de grilla en vertical*/
+    align-content: center;
+
+    /*alineacion de grilla en vertical y horizontal*/
+    /*place-content: center;*/
+
+    /*alineacion de items detro de la grilla horizontal*/
+    justify-items: end;
+    /*alineacion de items detro de la grilla vertical*/
+    align-items: flex-start;
+}
+
+.item{
+    border: 5px solid rebeccapurple;
+    font-size: 4rem;
+}
+
+.item-2{
+    /*alinear contenido de manera individual (cada celda)*/
+    justify-self: start;
+    align-self: flex-end;
+}
